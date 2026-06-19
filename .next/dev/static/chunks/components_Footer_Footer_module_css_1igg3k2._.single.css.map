@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/components/Footer/Footer.module.css"],"sourcesContent":[".footer {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  gap: 24px;\n  width: min(var(--container), calc(100% - 32px));\n  margin: 0 auto;\n  border-top: 1px solid var(--color-border);\n  padding: 28px 0 42px;\n}\n\n.footer strong {\n  color: var(--color-primary-soft);\n}\n\n.footer p {\n  margin: 8px 0 0;\n  color: var(--color-muted);\n}\n\n.links {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: flex-end;\n  gap: 14px;\n  color: var(--color-muted);\n}\n\n.links a:hover {\n  color: var(--color-primary);\n}\n\n@media (max-width: 700px) {\n  .footer {\n    align-items: flex-start;\n    flex-direction: column;\n  }\n\n  .links {\n    justify-content: flex-start;\n  }\n}\n"],"names":[],"mappings":"AAAA;;;;;;;;;;;AAWA;;;;AAIA;;;;;AAKA;;;;;;;;AAQA;;;;AAIA;EACE;;;;;EAKA"}}]
+}

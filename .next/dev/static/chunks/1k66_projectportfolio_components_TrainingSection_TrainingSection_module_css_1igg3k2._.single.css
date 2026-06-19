@@ -1,0 +1,132 @@
+/* [project]/Downloads/projectportfolio-1/projectportfolio/components/TrainingSection/TrainingSection.module.css [app-client] (css) */
+.TrainingSection-module__-L4-CW__section {
+  width: min(var(--container), calc(100% - 32px));
+  margin: 0 auto;
+  padding: 92px 0;
+}
+
+.TrainingSection-module__-L4-CW__layout {
+  grid-template-columns: 1.15fr .85fr;
+  align-items: start;
+  gap: 18px;
+  display: grid;
+}
+
+.TrainingSection-module__-L4-CW__timeline {
+  gap: 16px;
+  display: grid;
+}
+
+.TrainingSection-module__-L4-CW__timeline article, .TrainingSection-module__-L4-CW__panel {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: #07110cc7;
+}
+
+.TrainingSection-module__-L4-CW__timeline article {
+  padding: 26px 26px 26px 38px;
+  position: relative;
+}
+
+.TrainingSection-module__-L4-CW__timeline article:before {
+  background: var(--color-primary);
+  content: "";
+  border-radius: 999px;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  top: 32px;
+  left: 18px;
+}
+
+.TrainingSection-module__-L4-CW__timeline span {
+  color: var(--color-primary);
+  text-transform: uppercase;
+  font-size: .84rem;
+  font-weight: 800;
+}
+
+.TrainingSection-module__-L4-CW__timeline h3, .TrainingSection-module__-L4-CW__panel h3 {
+  margin: 10px 0 12px;
+  font-size: 1.2rem;
+}
+
+.TrainingSection-module__-L4-CW__timeline strong {
+  color: var(--color-primary-soft);
+}
+
+.TrainingSection-module__-L4-CW__timeline p, .TrainingSection-module__-L4-CW__panel li, .TrainingSection-module__-L4-CW__panel p {
+  color: var(--color-muted);
+  line-height: 1.65;
+}
+
+.TrainingSection-module__-L4-CW__timeline p {
+  margin: 12px 0 0;
+}
+
+.TrainingSection-module__-L4-CW__side {
+  gap: 16px;
+  display: grid;
+}
+
+.TrainingSection-module__-L4-CW__panel {
+  padding: 26px;
+}
+
+.TrainingSection-module__-L4-CW__panel ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.TrainingSection-module__-L4-CW__panel li + li {
+  margin-top: 8px;
+}
+
+.TrainingSection-module__-L4-CW__panel p {
+  justify-content: space-between;
+  gap: 18px;
+  margin: 0;
+  display: flex;
+}
+
+.TrainingSection-module__-L4-CW__panel p + p {
+  margin-top: 12px;
+}
+
+.TrainingSection-module__-L4-CW__panel p strong {
+  color: var(--color-primary-soft);
+}
+
+.TrainingSection-module__-L4-CW__tags {
+  flex-wrap: wrap;
+  gap: 10px;
+  display: flex;
+}
+
+.TrainingSection-module__-L4-CW__tags span {
+  border-radius: var(--radius);
+  color: var(--color-primary-soft);
+  background: #35f27d0f;
+  border: 1px solid #a7f3c72e;
+  padding: 7px 10px;
+  font-size: .86rem;
+}
+
+@media (max-width: 900px) {
+  .TrainingSection-module__-L4-CW__section {
+    padding: 70px 0;
+  }
+
+  .TrainingSection-module__-L4-CW__layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .TrainingSection-module__-L4-CW__panel p {
+    flex-direction: column;
+    gap: 4px;
+  }
+}
+
+/*# sourceMappingURL=1k66_projectportfolio_components_TrainingSection_TrainingSection_module_css_1igg3k2._.single.css.map*/

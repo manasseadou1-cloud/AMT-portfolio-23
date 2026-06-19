@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/Downloads/projectportfolio-1/projectportfolio/components/Navigation/Navigation.module.css"],"sourcesContent":[".wrapper {\n  position: sticky;\n  top: 0;\n  z-index: 10;\n  border-bottom: 1px solid rgba(53, 242, 125, 0.08);\n  background: rgba(2, 4, 3, 0.74);\n  backdrop-filter: blur(16px);\n}\n\n.navbar {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  width: min(var(--container), calc(100% - 32px));\n  margin: 0 auto;\n  padding: 18px 0;\n}\n\n.brand {\n  color: var(--color-primary);\n  font-size: 1.1rem;\n  font-weight: 800;\n}\n\n.links {\n  display: flex;\n  align-items: center;\n  gap: 18px;\n  color: var(--color-muted);\n  font-size: 0.95rem;\n}\n\n.links a {\n  transition: color 0.25s ease;\n}\n\n.links a:hover,\n.links a:focus-visible {\n  color: var(--color-primary);\n}\n\n@media (max-width: 700px) {\n  .navbar {\n    align-items: flex-start;\n    gap: 14px;\n    flex-direction: column;\n  }\n\n  .links {\n    width: 100%;\n    gap: 12px;\n    overflow-x: auto;\n    padding-bottom: 4px;\n  }\n}\n"],"names":[],"mappings":"AAAA;;;;;;;;;;AASA;;;;;;;;;AASA;;;;;;AAMA;;;;;;;;AAQA;;;;AAIA;;;;AAKA;EACE;;;;;;EAMA"}}]
+}

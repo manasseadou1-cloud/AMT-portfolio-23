@@ -1,0 +1,232 @@
+.section {
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  gap: 40px;
+  align-items: start;
+  width: min(var(--container), calc(100% - 32px));
+  margin: 0 auto;
+  padding: 92px 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.infoCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactCards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.cardLink,
+.cardInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 16px 18px;
+  background: rgba(7, 17, 12, 0.6);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  transition:
+    transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 0.3s ease,
+    background 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.cardLink:hover {
+  transform: translateY(-3px);
+  border-color: rgba(53, 242, 125, 0.5);
+  background: rgba(13, 28, 20, 0.75);
+  box-shadow:
+    0 10px 24px rgba(0, 0, 0, 0.3),
+    0 0 15px rgba(53, 242, 125, 0.1);
+}
+
+.cardType {
+  color: var(--color-primary);
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.cardValue {
+  color: var(--color-primary-soft);
+  font-weight: 700;
+  font-size: 0.95rem;
+  overflow-wrap: anywhere;
+}
+
+.form {
+  display: grid;
+  gap: 16px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 26px;
+  background: rgba(7, 17, 12, 0.6);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  transition: border-color 0.3s ease;
+}
+
+.form:focus-within {
+  border-color: rgba(53, 242, 125, 0.4);
+}
+
+.inputGroup {
+  display: grid;
+  gap: 8px;
+}
+
+.inputGroup label {
+  color: var(--color-primary-soft);
+  font-weight: 800;
+  font-size: 0.9rem;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  border: 1px solid rgba(167, 243, 199, 0.22);
+  border-radius: var(--radius);
+  padding: 13px 14px;
+  color: var(--color-text);
+  background: rgba(2, 4, 3, 0.72);
+  outline: none;
+  font-size: 0.95rem;
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.form input:focus,
+.form textarea:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 10px rgba(53, 242, 125, 0.2);
+}
+
+.submitBtn {
+  min-height: 48px;
+  border: 0;
+  border-radius: var(--radius);
+  color: #021006;
+  background: var(--color-primary);
+  font-weight: 900;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  transition:
+    transform 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.25s ease;
+  box-shadow: 0 4px 15px rgba(53, 242, 125, 0.2);
+}
+
+.submitBtn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(53, 242, 125, 0.4);
+}
+
+.status {
+  margin: 0;
+  color: var(--color-primary);
+  font-weight: 600;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  animation: fadeIn 0.4s ease;
+}
+
+.shareBox {
+  display: grid;
+  gap: 12px;
+  border-top: 1px solid var(--color-border);
+  padding-top: 18px;
+  margin-top: 10px;
+}
+
+.shareBox p {
+  margin: 0;
+  color: var(--color-primary-soft);
+  font-weight: 800;
+  font-size: 0.9rem;
+}
+
+.shareButtons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.copyBtn {
+  color: var(--color-primary-soft);
+  background: rgba(2, 4, 3, 0.72);
+  border: 1px solid rgba(167, 243, 199, 0.22);
+  min-height: 44px;
+  border-radius: var(--radius);
+  font-weight: 800;
+  font-size: 0.9rem;
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease,
+    color 0.25s ease;
+}
+
+.copyBtn:hover {
+  border-color: var(--color-primary);
+  color: var(--color-text);
+  background: rgba(53, 242, 125, 0.05);
+}
+
+.emailBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 44px;
+  border-radius: var(--radius);
+  color: #021006;
+  background: var(--color-primary-soft);
+  font-weight: 800;
+  font-size: 0.9rem;
+  transition:
+    transform 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+    background 0.25s ease;
+}
+
+.emailBtn:hover {
+  transform: translateY(-2px);
+  background: var(--color-primary);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 900px) {
+  .section {
+    grid-template-columns: 1fr;
+    padding: 70px 0;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .contactCards {
+    grid-template-columns: 1fr;
+  }
+  
+  .shareButtons {
+    grid-template-columns: 1fr;
+  }
+}

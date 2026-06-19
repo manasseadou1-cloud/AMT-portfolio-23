@@ -1,0 +1,33 @@
+.revealContent {
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  width: 100%;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+  transform: translate(0, 0) scale(1) !important;
+}
+
+.slideUp {
+  transform: translateY(30px);
+}
+
+.slideDown {
+  transform: translateY(-30px);
+}
+
+.slideLeft {
+  transform: translateX(30px);
+}
+
+.slideRight {
+  transform: translateX(-30px);
+}
+
+.fadeOnly {
+  transform: none;
+}

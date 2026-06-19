@@ -1,0 +1,30 @@
+/* [project]/components/SectionHeader/SectionHeader.module.css [app-client] (css) */
+.SectionHeader-module__FFyeUG__header {
+  max-width: 820px;
+  margin-bottom: 34px;
+}
+
+.SectionHeader-module__FFyeUG__label {
+  color: var(--color-primary);
+  letter-spacing: 0;
+  text-transform: uppercase;
+  margin: 0 0 14px;
+  font-size: .82rem;
+  font-weight: 800;
+}
+
+.SectionHeader-module__FFyeUG__header h2 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  line-height: 1.05;
+}
+
+.SectionHeader-module__FFyeUG__description {
+  max-width: 680px;
+  color: var(--color-muted);
+  margin: 18px 0 0;
+  font-size: 1.08rem;
+  line-height: 1.75;
+}
+
+/*# sourceMappingURL=components_SectionHeader_SectionHeader_module_css_1igg3k2._.single.css.map*/

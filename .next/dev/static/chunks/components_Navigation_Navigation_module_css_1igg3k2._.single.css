@@ -1,0 +1,58 @@
+/* [project]/components/Navigation/Navigation.module.css [app-client] (css) */
+.Navigation-module__AmG_aG__wrapper {
+  z-index: 10;
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+  background: #020403bd;
+  border-bottom: 1px solid #35f27d14;
+  position: sticky;
+  top: 0;
+}
+
+.Navigation-module__AmG_aG__navbar {
+  width: min(var(--container), calc(100% - 32px));
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 18px 0;
+  display: flex;
+}
+
+.Navigation-module__AmG_aG__brand {
+  color: var(--color-primary);
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+.Navigation-module__AmG_aG__links {
+  color: var(--color-muted);
+  align-items: center;
+  gap: 18px;
+  font-size: .95rem;
+  display: flex;
+}
+
+.Navigation-module__AmG_aG__links a {
+  transition: color .25s;
+}
+
+.Navigation-module__AmG_aG__links a:hover, .Navigation-module__AmG_aG__links a:focus-visible {
+  color: var(--color-primary);
+}
+
+@media (max-width: 700px) {
+  .Navigation-module__AmG_aG__navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .Navigation-module__AmG_aG__links {
+    gap: 12px;
+    width: 100%;
+    padding-bottom: 4px;
+    overflow-x: auto;
+  }
+}
+
+/*# sourceMappingURL=components_Navigation_Navigation_module_css_1igg3k2._.single.css.map*/

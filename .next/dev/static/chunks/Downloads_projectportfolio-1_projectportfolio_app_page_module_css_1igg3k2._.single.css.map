@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/Downloads/projectportfolio-1/projectportfolio/app/page.module.css"],"sourcesContent":[".page {\n  min-height: 100vh;\n  overflow: hidden;\n}\n"],"names":[],"mappings":"AAAA"}}]
+}

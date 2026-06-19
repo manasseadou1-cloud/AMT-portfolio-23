@@ -1,0 +1,189 @@
+/* [project]/components/HeroSection/HeroSection.module.css [app-client] (css) */
+.HeroSection-module__2k8MBW__hero {
+  width: min(var(--container), calc(100% - 32px));
+  grid-template-columns: minmax(0, 1.08fr) minmax(300px, .92fr);
+  align-items: center;
+  gap: 48px;
+  min-height: calc(100vh - 73px);
+  margin: 0 auto;
+  padding: 64px 0 84px;
+  display: grid;
+}
+
+.HeroSection-module__2k8MBW__content {
+  animation: .8s both HeroSection-module__2k8MBW__showUp;
+}
+
+.HeroSection-module__2k8MBW__eyebrow {
+  color: var(--color-primary);
+  letter-spacing: 0;
+  text-transform: uppercase;
+  margin: 0 0 14px;
+  font-size: .82rem;
+  font-weight: 800;
+}
+
+.HeroSection-module__2k8MBW__content h1 {
+  max-width: 760px;
+  margin: 0 0 22px;
+  font-size: clamp(3.2rem, 8vw, 6.8rem);
+  line-height: .92;
+}
+
+.HeroSection-module__2k8MBW__text {
+  max-width: 650px;
+  color: var(--color-muted);
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.7;
+}
+
+.HeroSection-module__2k8MBW__actions {
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 34px;
+  display: flex;
+}
+
+.HeroSection-module__2k8MBW__primaryButton, .HeroSection-module__2k8MBW__secondaryButton {
+  border-radius: var(--radius);
+  justify-content: center;
+  align-items: center;
+  min-height: 48px;
+  padding: 0 22px;
+  font-weight: 800;
+  transition: transform .25s, border-color .25s, background .25s;
+  display: inline-flex;
+}
+
+.HeroSection-module__2k8MBW__primaryButton {
+  color: #021006;
+  background: var(--color-primary);
+}
+
+.HeroSection-module__2k8MBW__secondaryButton {
+  border: 1px solid var(--color-border);
+  color: var(--color-primary-soft);
+  background: #07110cc7;
+}
+
+.HeroSection-module__2k8MBW__primaryButton:hover, .HeroSection-module__2k8MBW__secondaryButton:hover {
+  transform: translateY(-3px);
+}
+
+.HeroSection-module__2k8MBW__identityCard {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: linear-gradient(180deg, #35f27d1f, #35f27d05),
+    var(--color-surface);
+  box-shadow: var(--shadow-strong);
+  animation: 1s both HeroSection-module__2k8MBW__floatIn;
+}
+
+.HeroSection-module__2k8MBW__photoBox {
+  aspect-ratio: 4 / 4.5;
+  border-radius: var(--radius);
+  color: var(--color-primary-soft);
+  text-align: center;
+  border: 1px dashed #a7f3c773;
+  place-items: center;
+  margin: 24px;
+  display: grid;
+}
+
+.HeroSection-module__2k8MBW__photoBox span {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.HeroSection-module__2k8MBW__photoBox small {
+  color: var(--color-muted);
+}
+
+.HeroSection-module__2k8MBW__quickInfo {
+  border-top: 1px solid var(--color-border);
+  grid-template-columns: repeat(3, 1fr);
+  display: grid;
+}
+
+.HeroSection-module__2k8MBW__quickInfo div {
+  padding: 18px;
+}
+
+.HeroSection-module__2k8MBW__quickInfo div + div {
+  border-left: 1px solid var(--color-border);
+}
+
+.HeroSection-module__2k8MBW__quickInfo strong {
+  color: var(--color-primary);
+  margin-bottom: 6px;
+  font-size: 1.35rem;
+  display: block;
+}
+
+.HeroSection-module__2k8MBW__quickInfo span {
+  color: var(--color-muted);
+  font-size: .86rem;
+  line-height: 1.45;
+}
+
+@keyframes HeroSection-module__2k8MBW__showUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes HeroSection-module__2k8MBW__floatIn {
+  from {
+    opacity: 0;
+    transform: translateY(26px)scale(.96);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0)scale(1);
+  }
+}
+
+@media (max-width: 900px) {
+  .HeroSection-module__2k8MBW__hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    padding-top: 42px;
+  }
+
+  .HeroSection-module__2k8MBW__identityCard {
+    max-width: 460px;
+  }
+}
+
+@media (max-width: 640px) {
+  .HeroSection-module__2k8MBW__content h1 {
+    font-size: 3.25rem;
+  }
+
+  .HeroSection-module__2k8MBW__text {
+    font-size: 1.05rem;
+  }
+
+  .HeroSection-module__2k8MBW__primaryButton, .HeroSection-module__2k8MBW__secondaryButton {
+    width: 100%;
+  }
+
+  .HeroSection-module__2k8MBW__quickInfo {
+    grid-template-columns: 1fr;
+  }
+
+  .HeroSection-module__2k8MBW__quickInfo div + div {
+    border-top: 1px solid var(--color-border);
+    border-left: 0;
+  }
+}
+
+/*# sourceMappingURL=components_HeroSection_HeroSection_module_css_1igg3k2._.single.css.map*/

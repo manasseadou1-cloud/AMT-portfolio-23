@@ -1,0 +1,45 @@
+/* [project]/components/Footer/Footer.module.css [app-client] (css) */
+.Footer-module__rnk_JG__footer {
+  width: min(var(--container), calc(100% - 32px));
+  border-top: 1px solid var(--color-border);
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  margin: 0 auto;
+  padding: 28px 0 42px;
+  display: flex;
+}
+
+.Footer-module__rnk_JG__footer strong {
+  color: var(--color-primary-soft);
+}
+
+.Footer-module__rnk_JG__footer p {
+  color: var(--color-muted);
+  margin: 8px 0 0;
+}
+
+.Footer-module__rnk_JG__links {
+  color: var(--color-muted);
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 14px;
+  display: flex;
+}
+
+.Footer-module__rnk_JG__links a:hover {
+  color: var(--color-primary);
+}
+
+@media (max-width: 700px) {
+  .Footer-module__rnk_JG__footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .Footer-module__rnk_JG__links {
+    justify-content: flex-start;
+  }
+}
+
+/*# sourceMappingURL=components_Footer_Footer_module_css_1igg3k2._.single.css.map*/

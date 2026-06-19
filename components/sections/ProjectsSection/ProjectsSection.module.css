@@ -1,0 +1,208 @@
+.section {
+  width: min(var(--container), calc(100% - 32px));
+  margin: 0 auto;
+  padding: 92px 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  min-height: 310px;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: rgba(7, 17, 12, 0.6);
+  backdrop-filter: blur(8px);
+  position: relative;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  transition:
+    transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 0.3s ease,
+    background 0.3s ease,
+    box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card:hover {
+  border-color: rgba(53, 242, 125, 0.6);
+  background: rgba(13, 28, 20, 0.85);
+  transform: translateY(-6px);
+  box-shadow:
+    0 12px 40px rgba(0, 0, 0, 0.4),
+    0 0 20px rgba(53, 242, 125, 0.1);
+}
+
+/* Scanner laser horizontal line sweeping */
+.scanLine {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--color-primary), transparent);
+  opacity: 0;
+  z-index: 5;
+  pointer-events: none;
+  box-shadow: 0 0 8px var(--color-primary);
+}
+
+.card:hover .scanLine {
+  animation: projectScan 2.5s ease-in-out infinite;
+  opacity: 0.8;
+}
+
+.visual {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 22px;
+  background:
+    linear-gradient(145deg, rgba(53, 242, 125, 0.12), rgba(53, 242, 125, 0.01)),
+    var(--color-surface-strong);
+  position: relative;
+  overflow: hidden;
+}
+
+.visualGrid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.15;
+  background-size: 10px 10px;
+  background-image:
+    linear-gradient(to right, var(--color-primary) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--color-primary) 1px, transparent 1px);
+  pointer-events: none;
+}
+
+.cardNumber {
+  color: var(--color-primary-soft);
+  font-size: 2.5rem;
+  font-weight: 900;
+  z-index: 2;
+  transition:
+    color 0.3s ease,
+    text-shadow 0.3s ease;
+}
+
+.card:hover .cardNumber {
+  color: var(--color-primary);
+  text-shadow: 0 0 12px rgba(53, 242, 125, 0.6);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 26px;
+  z-index: 2;
+}
+
+.category {
+  color: var(--color-primary);
+  font-size: 0.84rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.content h3 {
+  margin: 8px 0 12px;
+  font-size: 1.4rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.description {
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 0.98rem;
+  line-height: 1.65;
+}
+
+.stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 20px 0;
+}
+
+.stack span {
+  border: 1px solid rgba(167, 243, 199, 0.15);
+  border-radius: 6px;
+  padding: 5px 10px;
+  color: var(--color-primary-soft);
+  background: rgba(53, 242, 125, 0.04);
+  font-size: 0.82rem;
+  font-weight: 600;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.card:hover .stack span {
+  border-color: rgba(53, 242, 125, 0.3);
+  background: rgba(53, 242, 125, 0.08);
+}
+
+.resultBox {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.resultLabel {
+  color: var(--color-muted);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.7;
+}
+
+.resultText {
+  color: var(--color-primary-soft);
+  font-weight: 700;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+@keyframes projectScan {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 100%;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@media (max-width: 960px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding: 70px 0;
+  }
+
+  .card {
+    grid-template-columns: 1fr;
+  }
+
+  .visual {
+    min-height: 92px;
+  }
+}
