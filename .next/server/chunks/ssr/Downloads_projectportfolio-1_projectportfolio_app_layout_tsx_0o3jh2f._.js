@@ -1,3 +1,0 @@
-module.exports=[7401,a=>{"use strict";var b=a.i(81192);a.s(["default",0,function({children:a}){return(0,b.jsx)("html",{lang:"fr",children:(0,b.jsx)("body",{children:a})})},"metadata",0,{title:"ADOU Thecle Manasse | Portfolio",description:"Portfolio de ADOU Thecle Manasse, développeur fullstack avec une sensibilité réseau et sécurité informatique.",keywords:["ADOU Thecle Manasse","développeur fullstack","portfolio développeur","Next.js","Vue.js","Laravel","réseau informatique","cybersécurité","Abidjan"]}])},20706,a=>{a.n(a.i(7401))}];
-
-//# sourceMappingURL=Downloads_projectportfolio-1_projectportfolio_app_layout_tsx_0o3jh2f._.js.map

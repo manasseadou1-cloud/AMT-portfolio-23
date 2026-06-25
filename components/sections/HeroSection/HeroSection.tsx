@@ -103,7 +103,7 @@ export function HeroSection() {
                    Copiez votre photo dans le dossier public/ du projet
                 ====================================================== */}
             <img
-              src="/WhatsApp Image 2026-05-26 at 7.56.11 PM.jpeg"
+              src="/maes.jpeg"
               alt={`Photo de ${profile.firstName}`}
               className={styles.profilePhoto}
             />

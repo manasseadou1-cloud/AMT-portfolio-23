@@ -23,7 +23,7 @@ export const navigationItems = [
 
 export const highlights = [
   { value: "6 mois", label: "Formation intensive fullstack" },
-  { value: "5+", label: "Projets académiques réalisés" },
+  { value: "10", label: "Projets académiques réalisés" },
   { value: "3", label: "Axes forts : web, mobile, sécurité" },
 ];
 
@@ -57,14 +57,6 @@ export const skillGroups = [
 
 export const projects = [
   {
-    name: "Projet Mobile",
-    category: "Application mobile",
-    stack: ["Mobile", "UI", "Logique utilisateur"],
-    description:
-      "Application réalisée pendant la formation WE.CODE / Epitech pour pratiquer la structure d'écrans, la navigation et la logique d'une application mobile.",
-    result: "Mise en pratique du développement mobile dans un contexte de formation intensive.",
-  },
-  {
     name: "MyContacts",
     category: "Gestion de contacts",
     stack: ["Vue 3", "TypeScript", "Vite"],
@@ -89,12 +81,61 @@ export const projects = [
     result: "Renforcement de mes bases Vue et de ma capacité à collaborer sur une interface complète.",
   },
   {
-    name: "La Boutique",
+    name: "My Shop",
     category: "E-commerce",
-    stack: ["PHP natif", "PDO", "Sessions"],
+    stack: ["JavaScript", "PHP", "MySQL", "HTML/CSS"],
     description:
-      "Site e-commerce solo avec authentification, sessions utilisateur et accès aux données grâce à PDO.",
-    result: "Projet fondateur pour comprendre le fonctionnement complet d'une application web sans framework.",
+      "Application e-commerce avec catalogue produits, panier et système de commande, développée en équipe. Travail sur la logique métier complète : du backend au frontend.",
+    result: "Projet fondateur pour comprendre un flux e-commerce complet, de la base de données à l'interface utilisateur.",
+  },
+  {
+    name: "Show Time",
+    category: "Plateforme événements",
+    stack: ["React", "REST API", "JavaScript", "CSS"],
+    description:
+      "Plateforme de découverte d'événements et spectacles avec intégration d'API externe, filtres de recherche et affichage dynamique des données.",
+    result: "Renforcement de mes compétences sur la consommation d'API et la gestion de données dynamiques côté frontend.",
+  },
+  {
+    name: "Trello Clone",
+    category: "Application mobile",
+    stack: ["React Native", "Expo SDK 54", "TypeScript", "OAuth2", "Trello API"],
+    description:
+      "App mobile de gestion de projet type Trello, développée en équipe de 4. Responsable de l'auth OAuth2 via Trello API, du CRUD des workspaces et du stockage sécurisé des tokens.",
+    result: "Premier projet mobile complet, avec gestion d'authentification complexe cross-plateforme iOS/Android.",
+    featured: true,
+  },
+  {
+    name: "Dashboard",
+    category: "Architecture microservices",
+    stack: ["React", "Vue", "Docker", "OAuth2"],
+    description:
+      "Web app type Netvibes permettant à l'utilisateur de s'abonner à des Services (météo, RSS, Reddit...) et de composer son propre tableau de bord avec des widgets configurables et rafraîchis en temps réel. Authentification classique + OAuth2. Projet de groupe, conteneurisé avec Docker.",
+    result: "Premier contact avec une architecture orientée services et la composition d'interfaces dynamiques pilotées par API.",
+  },
+  {
+    name: "My Rotten Tomatoes",
+    category: "Plateforme de critiques films",
+    stack: ["Next.js", "TMDB API", "TypeScript"],
+    description:
+      "Site de présentation et critique de films inspiré de Rotten Tomatoes, avec intégration de The Movie Database API. Gestion de favoris, notes, commentaires, filtres par genre/date/réalisateur, et back-office admin complet (gestion films, comptes, statistiques). Projet de groupe.",
+    result: "Mise en pratique d'une intégration API externe complète côté front et back, avec gestion de rôles utilisateur/admin.",
+  },
+  {
+    name: "My Show Time",
+    category: "Réservation de billets",
+    stack: ["Nest.js", "MongoDB", "Node.js"],
+    description:
+      "Site de réservation de billets de concerts/festivals en full Nest.js, avec MongoDB. Recherche, wishlist, réservation avec génération de QR code, notifications sur les artistes favoris, et panel admin pour la gestion des concerts et statistiques. Projet de groupe.",
+    result: "Approfondissement du développement backend modulaire avec Nest.js et la modélisation de données NoSQL avec MongoDB.",
+  },
+  {
+    name: "YOWL",
+    category: "Commentaires web",
+    stack: ["Vue.js", "Laravel", "Docker"],
+    description:
+      "Application web pour centraliser et partager des commentaires sur n'importe quel contenu du web, avec une approche façon OSINT. Authentification sécurisée, conteneurisation Docker. Responsable de la partie frontend (Vue.js), connecté à l'API Laravel développée par l'équipe backend. Projet de groupe.",
+    result: "Collaboration frontend/backend à grande échelle sur un produit avec cahier des charges client réel.",
   },
 ];
 

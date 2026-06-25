@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/Downloads/projectportfolio-1/projectportfolio/components/AboutSection/AboutSection.module.css"],"sourcesContent":[".section {\n  width: min(var(--container), calc(100% - 32px));\n  margin: 0 auto;\n  padding: 92px 0;\n  border-top: 1px solid var(--color-border);\n}\n\n.content {\n  display: grid;\n  grid-template-columns: 0.8fr 1.2fr;\n  gap: 32px;\n  align-items: start;\n}\n\n.pitch {\n  border: 1px solid var(--color-border);\n  border-radius: var(--radius);\n  padding: 26px;\n  background: rgba(7, 17, 12, 0.78);\n}\n\n.pitch p {\n  margin: 0;\n  color: var(--color-primary-soft);\n  font-size: 1.15rem;\n  font-weight: 700;\n  line-height: 1.7;\n}\n\n.paragraphs p {\n  margin: 0;\n  color: var(--color-muted);\n  font-size: 1.08rem;\n  line-height: 1.85;\n}\n\n.paragraphs p + p {\n  margin-top: 18px;\n}\n\n@media (max-width: 800px) {\n  .section {\n    padding: 70px 0;\n  }\n\n  .content {\n    grid-template-columns: 1fr;\n  }\n}\n"],"names":[],"mappings":"AAAA;;;;;;;AAOA;;;;;;;AAOA;;;;;;;AAOA;;;;;;;;AAQA;;;;;;;AAOA;;;;AAIA;EACE;;;;EAIA"}}]
-}
