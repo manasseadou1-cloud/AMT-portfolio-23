@@ -401,7 +401,7 @@ const projects = [
         ],
         description: "Web app type Netvibes permettant à l'utilisateur de s'abonner à des Services (météo, RSS, Reddit...) et de composer son propre tableau de bord avec des widgets configurables et rafraîchis en temps réel. Authentification classique + OAuth2. Projet de groupe, conteneurisé avec Docker.",
         result: "Premier contact avec une architecture orientée services et la composition d'interfaces dynamiques pilotées par API.",
-        image: undefined,
+        image: "/Dashboard.png",
         demoUrl: undefined
     },
     {
