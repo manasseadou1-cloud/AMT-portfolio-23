@@ -9,7 +9,7 @@ export function HeroSection() {
         <Reveal direction="up" delay={0}>
           <p className={styles.eyebrow}>{profile.role}</p>
         </Reveal>
-        
+
         <Reveal direction="up" delay={150}>
           <h1 className={styles.title}>{profile.fullName}</h1>
         </Reveal>
@@ -36,8 +36,8 @@ export function HeroSection() {
             <svg className={styles.hudSvg} viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
               <defs>
                 <radialGradient id="radar-glow" cx="50%" cy="50%" r="50%">
-                  <stop offset="0%" stopColor="#35f27d" stopOpacity="0.18"/>
-                  <stop offset="100%" stopColor="#35f27d" stopOpacity="0"/>
+                  <stop offset="0%" stopColor="#35f27d" stopOpacity="0.18" />
+                  <stop offset="100%" stopColor="#35f27d" stopOpacity="0" />
                 </radialGradient>
               </defs>
 

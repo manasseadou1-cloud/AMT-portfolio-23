@@ -360,7 +360,7 @@ const projects = [
         ],
         description: "Site de présentation et critique de films inspiré de Rotten Tomatoes, avec intégration de The Movie Database API. Gestion de favoris, notes, commentaires, filtres par genre/date/réalisateur, et back-office admin complet (gestion films, comptes, statistiques). Projet de groupe.",
         result: "Mise en pratique d'une intégration API externe complète côté front et back, avec gestion de rôles utilisateur/admin.",
-        image: undefined,
+        image: "/My_Rotten_Tomatos.png",
         demoUrl: undefined
     },
     {
