@@ -24,44 +24,81 @@ export function ProjectsSection() {
       />
 
       <div className={styles.grid} key={currentPage}>
-        {currentProjects.map((project, index) => (
-          <Reveal direction="up" delay={index * 100} key={project.name}>
-            <article className={`${styles.card} ${"featured" in project && project.featured ? styles.cardFeatured : ""}`}>
-              {/* Animated Scan Line */}
-              <div className={styles.scanLine} />
+        {currentProjects.map((project, index) => {
+          const CardWrapper = project.demoUrl ? "a" : "article";
+          const cardProps = project.demoUrl
+            ? {
+                href: project.demoUrl,
+                target: "_blank",
+                rel: "noopener noreferrer",
+                className: `${styles.card} ${styles.cardLink} ${"featured" in project && project.featured ? styles.cardFeatured : ""}`,
+              }
+            : {
+                className: `${styles.card} ${"featured" in project && project.featured ? styles.cardFeatured : ""}`,
+              };
 
-              {"featured" in project && project.featured && (
-                <div className={styles.featuredBadge}>
-                  <span>⭐ Projet phare</span>
+          return (
+            <Reveal direction="up" delay={index * 100} key={project.name}>
+              {/* @ts-ignore */}
+              <CardWrapper {...cardProps}>
+                {/* Animated Scan Line */}
+                <div className={styles.scanLine} />
+
+                {"featured" in project && project.featured && (
+                  <div className={styles.featuredBadge}>
+                    <span>⭐ Projet phare</span>
+                  </div>
+                )}
+
+                <div className={styles.imageContainer}>
+                  {project.image ? (
+                    <img
+                      src={project.image}
+                      alt={`Capture d'écran de ${project.name}`}
+                      className={styles.cardImage}
+                    />
+                  ) : (
+                    <div className={styles.imagePlaceholder}>
+                      <div className={styles.placeholderGrid} />
+                      <span className={styles.placeholderText}>
+                        {project.name.substring(0, 2).toUpperCase()}
+                      </span>
+                    </div>
+                  )}
+                  
+                  {/* Overlay Card Number */}
+                  <span className={styles.cardNumber}>{String(startIndex + index + 1).padStart(2, "0")}</span>
+
+                  {/* Overlay demo URL indicator */}
+                  {project.demoUrl && (
+                    <div className={styles.demoBadge}>
+                      <span>Démo Live ↗</span>
+                    </div>
+                  )}
                 </div>
-              )}
 
-              <div className={styles.visual} aria-hidden="true">
-                <span className={styles.cardNumber}>{String(startIndex + index + 1).padStart(2, "0")}</span>
-                <div className={styles.visualGrid} />
-              </div>
+                <div className={styles.content}>
+                  <div className={styles.headerBlock}>
+                    <span className={styles.category}>{project.category}</span>
+                    <h3>{project.name}</h3>
+                    <p className={styles.description}>{project.description}</p>
+                  </div>
 
-              <div className={styles.content}>
-                <div className={styles.headerBlock}>
-                  <span className={styles.category}>{project.category}</span>
-                  <h3>{project.name}</h3>
-                  <p className={styles.description}>{project.description}</p>
+                  <div className={styles.stack}>
+                    {project.stack.map((technology) => (
+                      <span key={technology}>{technology}</span>
+                    ))}
+                  </div>
+
+                  <div className={styles.resultBox}>
+                    <span className={styles.resultLabel}>Résultat :</span>
+                    <strong className={styles.resultText}>{project.result}</strong>
+                  </div>
                 </div>
-
-                <div className={styles.stack}>
-                  {project.stack.map((technology) => (
-                    <span key={technology}>{technology}</span>
-                  ))}
-                </div>
-
-                <div className={styles.resultBox}>
-                  <span className={styles.resultLabel}>Résultat :</span>
-                  <strong className={styles.resultText}>{project.result}</strong>
-                </div>
-              </div>
-            </article>
-          </Reveal>
-        ))}
+              </CardWrapper>
+            </Reveal>
+          );
+        })}
       </div>
 
       {totalPages > 1 && (

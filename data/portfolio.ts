@@ -63,6 +63,8 @@ export const projects = [
     description:
       "Application solo permettant d'organiser des contacts avec une interface claire, une logique de composants et une base TypeScript.",
     result: "Projet utile pour montrer mon autonomie sur une interface frontend moderne.",
+    image: undefined,
+    demoUrl: undefined,
   },
   {
     name: "FreeAds",
@@ -71,14 +73,18 @@ export const projects = [
     description:
       "Plateforme d'annonces réalisée en groupe avec gestion des routes, modèles, vues et interactions autour des annonces.",
     result: "Projet important pour progresser sur Laravel, le backend et le travail d'équipe.",
+    image: undefined,
+    demoUrl: undefined,
   },
   {
-    name: "YOWL",
-    category: "Commentaires web",
-    stack: ["Vue.js", "Pinia", "Vue Router"],
+    name: "PostIt",
+    category: "Gestion de notes",
+    stack: ["Vue.js", "Vuex", "Vue Router", "API REST"],
     description:
-      "Plateforme de commentaires construite en équipe avec gestion de navigation, état global et composants réutilisables.",
-    result: "Renforcement de mes bases Vue et de ma capacité à collaborer sur une interface complète.",
+      "Application Vue.js de gestion de post-it, développée en solo. Utilisation du Vue Router officiel, de Vuex pour la gestion d'état, et d'une API REST (fetch) pour la persistance des données, remplaçant le localStorage initial.",
+    result: "Premier projet solo en Vue.js, de la logique locale (localStorage) à une vraie architecture avec state management et API.",
+    image: "/Postit.png",
+    demoUrl: "https://post-it-eta-seven.vercel.app/",
   },
   {
     name: "My Shop",
@@ -87,14 +93,18 @@ export const projects = [
     description:
       "Application e-commerce avec catalogue produits, panier et système de commande, développée en équipe. Travail sur la logique métier complète : du backend au frontend.",
     result: "Projet fondateur pour comprendre un flux e-commerce complet, de la base de données à l'interface utilisateur.",
+    image: "/MyShop.png",
+    demoUrl: "https://mymarketplaceonline.xo.je/?i=1",
   },
   {
-    name: "Show Time",
-    category: "Plateforme événements",
-    stack: ["React", "REST API", "JavaScript", "CSS"],
+    name: "My Shop — Intégration",
+    category: "Intégration HTML/CSS",
+    stack: ["HTML5", "CSS3", "SEO"],
     description:
-      "Plateforme de découverte d'événements et spectacles avec intégration d'API externe, filtres de recherche et affichage dynamique des données.",
-    result: "Renforcement de mes compétences sur la consommation d'API et la gestion de données dynamiques côté frontend.",
+      "Intégration complète d'une maquette de boutique en ligne, desktop et mobile, en HTML5/CSS3 strict respect des standards W3C, avec optimisation SEO (Google Lighthouse) et usage de grilles CSS pour le responsive. Premier projet de la formation.",
+    result: "Bases solides en intégration web pure, sans framework, respect des standards et premiers réflexes SEO.",
+    image: undefined,
+    demoUrl: undefined,
   },
   {
     name: "Trello Clone",
@@ -104,6 +114,8 @@ export const projects = [
       "App mobile de gestion de projet type Trello, développée en équipe de 4. Responsable de l'auth OAuth2 via Trello API, du CRUD des workspaces et du stockage sécurisé des tokens.",
     result: "Premier projet mobile complet, avec gestion d'authentification complexe cross-plateforme iOS/Android.",
     featured: true,
+    image: "/TrelloClone.jpeg",
+    demoUrl: "https://expo.dev/accounts/mateo_dev007/projects/mobilapp101/builds/930fbd57-6b17-44cc-af9d-e7162aede31f",
   },
   {
     name: "Dashboard",
@@ -112,6 +124,8 @@ export const projects = [
     description:
       "Web app type Netvibes permettant à l'utilisateur de s'abonner à des Services (météo, RSS, Reddit...) et de composer son propre tableau de bord avec des widgets configurables et rafraîchis en temps réel. Authentification classique + OAuth2. Projet de groupe, conteneurisé avec Docker.",
     result: "Premier contact avec une architecture orientée services et la composition d'interfaces dynamiques pilotées par API.",
+    image: undefined,
+    demoUrl: undefined,
   },
   {
     name: "My Rotten Tomatoes",
@@ -120,6 +134,8 @@ export const projects = [
     description:
       "Site de présentation et critique de films inspiré de Rotten Tomatoes, avec intégration de The Movie Database API. Gestion de favoris, notes, commentaires, filtres par genre/date/réalisateur, et back-office admin complet (gestion films, comptes, statistiques). Projet de groupe.",
     result: "Mise en pratique d'une intégration API externe complète côté front et back, avec gestion de rôles utilisateur/admin.",
+    image: undefined,
+    demoUrl: undefined,
   },
   {
     name: "My Show Time",
@@ -128,6 +144,8 @@ export const projects = [
     description:
       "Site de réservation de billets de concerts/festivals en full Nest.js, avec MongoDB. Recherche, wishlist, réservation avec génération de QR code, notifications sur les artistes favoris, et panel admin pour la gestion des concerts et statistiques. Projet de groupe.",
     result: "Approfondissement du développement backend modulaire avec Nest.js et la modélisation de données NoSQL avec MongoDB.",
+    image: undefined,
+    demoUrl: undefined,
   },
   {
     name: "YOWL",
@@ -136,6 +154,8 @@ export const projects = [
     description:
       "Application web pour centraliser et partager des commentaires sur n'importe quel contenu du web, avec une approche façon OSINT. Authentification sécurisée, conteneurisation Docker. Responsable de la partie frontend (Vue.js), connecté à l'API Laravel développée par l'équipe backend. Projet de groupe.",
     result: "Collaboration frontend/backend à grande échelle sur un produit avec cahier des charges client réel.",
+    image: undefined,
+    demoUrl: undefined,
   },
 ];
 
