@@ -801,10 +801,11 @@
   z-index: 100;
   border-bottom: 1px solid var(--color-border);
   -webkit-backdrop-filter: blur(20px);
-  backdrop-filter: blur(20px);
-  background: #020403bf;
-  position: sticky;
+  background: #020403d1;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   box-shadow: 0 4px 30px #00000080;
 }
 
@@ -1598,7 +1599,7 @@
 /* [project]/app/page.module.css [app-client] (css) */
 .page-module__E0kJGG__page {
   min-height: 100vh;
-  overflow: hidden;
+  padding-top: var(--nav-height);
 }
 
 /*# sourceMappingURL=_15w6ss0._.css.map*/

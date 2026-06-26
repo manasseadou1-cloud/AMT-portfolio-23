@@ -11,6 +11,8 @@
   --shadow-strong: 0 24px 80px rgba(0, 0, 0, 0.38);
   --radius: 8px;
   --container: 1120px;
+  /* Hauteur du header fixe — à mettre à jour ici si le header change */
+  --nav-height: 72px;
 }
 
 * {
@@ -53,4 +55,21 @@ img {
 ::selection {
   color: #021006;
   background: var(--color-primary);
+}
+
+/* ── Ancres de navigation : offset pour le header fixe ── */
+#accueil,
+#profil,
+#competences,
+#projets,
+#parcours,
+#contact {
+  scroll-margin-top: calc(var(--nav-height) + 8px);
+}
+
+/* Sur mobile le header est plus haut (colonne) */
+@media (max-width: 700px) {
+  :root {
+    --nav-height: 108px;
+  }
 }

@@ -12,6 +12,7 @@
   --shadow-strong: 0 24px 80px #00000061;
   --radius: 8px;
   --container: 1120px;
+  --nav-height: 72px;
 }
 
 * {
@@ -50,6 +51,16 @@ img {
 ::selection {
   color: #021006;
   background: var(--color-primary);
+}
+
+#accueil, #profil, #competences, #projets, #parcours, #contact {
+  scroll-margin-top: calc(var(--nav-height) + 8px);
+}
+
+@media (max-width: 700px) {
+  :root {
+    --nav-height: 108px;
+  }
 }
 
 /*# sourceMappingURL=app_globals_0yg4wg8.css.map*/
