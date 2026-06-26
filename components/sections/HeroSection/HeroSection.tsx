@@ -126,7 +126,7 @@ export function HeroSection() {
                    Copiez votre photo dans le dossier public/ du projet
                 ====================================================== */}
             <img
-              src="/maes.jpeg"
+              src="/Prophoto.jpeg"
               alt={`Photo de ${profile.firstName}`}
               className={styles.profilePhoto}
             />
