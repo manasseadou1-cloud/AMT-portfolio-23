@@ -427,8 +427,8 @@ const projects = [
         ],
         description: "Site de réservation de billets de concerts/festivals en full Nest.js, avec MongoDB. Recherche, wishlist, réservation avec génération de QR code, notifications sur les artistes favoris, et panel admin pour la gestion des concerts et statistiques. Projet de groupe.",
         result: "Approfondissement du développement backend modulaire avec Nest.js et la modélisation de données NoSQL avec MongoDB.",
-        image: undefined,
-        demoUrl: undefined
+        image: "/My_Show_Time.png",
+        demoUrl: "https://babi-events.onrender.com/users"
     },
     {
         name: "YOWL",
